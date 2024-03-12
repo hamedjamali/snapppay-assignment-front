@@ -1,9 +1,6 @@
 import React, {
   memo,
   useDeferredValue,
-  useEffect,
-  useMemo,
-  useRef,
   useState,
 } from "react";
 import { SearchIcon } from "../icon-svg";
@@ -28,7 +25,7 @@ const Search = memo(({ data, searchList, dataFromServer }) => {
   };
   return (
     <div className="last-search sticky top-5">
-      <form className="max-w-md mx-auto">
+      <form className="p-2 mx-auto">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

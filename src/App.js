@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route path="/" exact element={<ContactsList />} />
-        {/* <Route path="/contact/:id" component={ContactDetails} /> */}
+        <Route path="/contact/:id" exact element={<ContactDetails />} />
     </Routes>
    </BrowserRouter>
   );

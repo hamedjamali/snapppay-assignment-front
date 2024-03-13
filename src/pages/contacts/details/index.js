@@ -12,7 +12,7 @@ const ContactDetails = () => {
   const storeToLocal = () => {
     const repeated = ids?.some((v) => v == id);
     console.log('length', ids, ids?.length);
-    if (!repeated && ids?.length <= 4) {
+    if (!repeated && ids?.length < 4) {
       dispatch({
         type: "user",
         ids: !!ids ? [...ids, id] : [id],
